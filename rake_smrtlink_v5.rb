@@ -1,5 +1,5 @@
 ENV["projectdir"] ? @projectdir=ENV["projectdir"] : @projectdir = "HGAP_Assembly"
-ENV["ccsprojectdir"] ? @projectdir=ENV["ccsprojectdir"] : @projectdir = "CCS"
+ENV["ccsprojectdir"] ? @projectdir=ENV["ccsprojectdir"] : @ccsprojectdir = "CCS"
 
 directory "lib"
 
