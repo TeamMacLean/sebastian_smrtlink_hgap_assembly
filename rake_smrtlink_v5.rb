@@ -1,4 +1,5 @@
 ENV["projectdir"] ? @projectdir=ENV["projectdir"] : @projectdir = "HGAP_Assembly"
+ENV["ccsprojectdir"] ? @projectdir=ENV["ccsprojectdir"] : @projectdir = "CCS"
 
 directory "lib"
 
@@ -17,6 +18,6 @@ task :run_hgap => ["lib/subreads.xml"] do
 end
 task :run_ccs => ["lib/subreads.xml"] do
 	puts "Running CCS using smrtlink v5.0.1"
-	sh "source smrtlink-5.0.1; pbsmrtpipe pipeline-id --entry eid_subread:lib/subreads.xml --preset-xml /tsl/software/testing/smrtlink/5.0.1/x86_64/lib/workflow_options_preset.xml --preset-xml lib/ccs.preset.xml -o #{@projectdir} pbsmrtpipe.pipelines.sa3_ds_ccs"
+	sh "source smrtlink-5.0.1; pbsmrtpipe pipeline-id --entry eid_subread:lib/subreads.xml --preset-xml /tsl/software/testing/smrtlink/5.0.1/x86_64/lib/workflow_options_preset.xml --preset-xml lib/ccs.preset.xml -o #{@ccsprojectdir} pbsmrtpipe.pipelines.sa3_ds_ccs"
 end
 task :default => [:run_hgap, :run_ccs]
