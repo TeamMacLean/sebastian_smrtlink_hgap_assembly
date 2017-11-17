@@ -25,6 +25,8 @@ By default, the projectdir is CCS
 
 In HPC, the command can be submitted as:
 
+source ruby-2.3.1
+
 source smrtlink-5.0.1
 
 sbatch --mem 20G -o /dev/null -J hgapsmrtlink --wrap "rake -f rake_smrtlink_v5.rb projectdir=Assembly run_hgap"
