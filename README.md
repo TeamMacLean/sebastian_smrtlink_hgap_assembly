@@ -12,6 +12,7 @@ The RSII SMRTcell data have been converted to Sequel BAM format and that can be 
 
 ### Run HGAP assembly only
 1) rake -f rake_smrtlink_v5.rb projectdir=Assembly run_hgap
+
 By default, the projectdir is HGAP_Assembly
 ### Run consensus sequences only
 2) rake -f rake_smrtlink_v5.rb projectdir=CCSREADS run_ccs       
