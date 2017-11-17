@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pipeline-preset-template>
+    <task-options>
+        <option id="pbccs.task_options.min_read_score">
+            <value>0.65</value>
+        </option>
+        <option id="pbccs.task_options.min_predicted_accuracy">
+            <value>0.9</value>
+        </option>
+        <option id="pbccs.task_options.max_drop_fraction">
+            <value>0.34</value>
+        </option>
+        <option id="pbccs.task_options.model_path">
+            <value />
+        </option>
+        <option id="pbccs.task_options.polish">
+            <value>True</value>
+        </option>
+        <option id="pbccs.task_options.rich_qvs">
+            <value>False</value>
+        </option>
+        <option id="pbcoretools.task_options.other_filters">
+            <value />
+        </option>
+        <option id="pbcoretools.task_options.read_length">
+            <value>0</value>
+        </option>
+        <option id="pbccs.task_options.by_strand">
+            <value>False</value>
+        </option>
+        <option id="pbccs.task_options.report_file">
+            <value>ccs_report.txt</value>
+        </option>
+        <option id="pbccs.task_options.min_length">
+            <value>10</value>
+        </option>
+        <option id="pbccs.task_options.min_passes">
+            <value>2</value>
+        </option>
+        <option id="pbccs.task_options.min_snr">
+            <value>3.75</value>
+        </option>
+        <option id="pbccs.task_options.max_length">
+            <value>40000</value>
+        </option>
+        <option id="pbccs.task_options.min_zscore">
+            <value>-3.4</value>
+        </option>
+    </task-options>
+</pipeline-preset-template>
